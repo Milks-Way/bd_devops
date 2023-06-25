@@ -4,27 +4,27 @@
 
     docker-compose.yaml:    
 
-    version: '3.6'
+        version: '3.6'
 
-    volumes:
-    data: {}
-    backup: {}
+        volumes:
+        data: {}
+        backup: {}
 
-    services:
+        services:
 
-        postgres:
-            image: postgres:12
-            container_name: postgr
-            ports:
-            - "0.0.0.0:5432:5432"
-            volumes:
-            - data:/Users/nikolayroshchin/DevOps/database/ex_2/data/
-            - backup:/Users/nikolayroshchin/DevOps/database/ex_2/backup/
-            environment:
-            POSTGRES_USER: "test-user"
-            POSTGRES_PASSWORD: "12345"
-            POSTGRES_DB: "first_db"
-            restart: always
+            postgres:
+                image: postgres:12
+                container_name: postgr
+                ports:
+                - "0.0.0.0:5432:5432"
+                volumes:
+                - data:/Users/nikolayroshchin/DevOps/database/ex_2/data/
+                - backup:/Users/nikolayroshchin/DevOps/database/ex_2/backup/
+                environment:
+                POSTGRES_USER: "test-user"
+                POSTGRES_PASSWORD: "12345"
+                POSTGRES_DB: "first_db"
+                restart: always
 
     Поднимаем docker-compose и запускаем bash внутри: 
 
