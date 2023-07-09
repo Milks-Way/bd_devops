@@ -300,5 +300,6 @@
    ![db-4_4](./db-4_4.png)
 
    Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца title для таблиц test_database?
-
+   ```
    title character varying(80) NOT NULL UNIQUE,
+   ```
