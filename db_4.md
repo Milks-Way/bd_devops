@@ -1,7 +1,7 @@
 1. **Задача 1**
 
    Используя Docker, поднимите инстанс PostgreSQL (версию 13). Данные БД сохраните в volume.
-
+   ```
    version: '3.6'
 
    volumes:
@@ -23,6 +23,7 @@
             POSTGRES_PASSWORD: "12345"
             POSTGRES_DB: "my_db"
             restart: always
+   ```
 
    ![db-4_1-1](./db-4_1-1.png)
 
